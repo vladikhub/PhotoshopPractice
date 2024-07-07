@@ -12,7 +12,7 @@ class Menu(QMainWindow):
     def __init__(self):
         super().__init__()
         # загрузка окна Меню
-        uic.loadUi('menu.ui', self)
+        uic.loadUi('D://PycharmProjects/SumPracticaFinal/ui/menu.ui', self)
         self.setWindowTitle("Photoshop")
         # дополнительная установка интерфейса ui
         self.setUpUi()
@@ -244,7 +244,7 @@ class Menu(QMainWindow):
             new_image = QImage(image.data, width, height, QImage.Format_BGR888)
             pixmap = QPixmap.fromImage(new_image)
             self.imageLabel.setPixmap(pixmap)
-            self.curPixmap = pixmap
+            self.originPixmap = pixmap
 
     def setBrightness(self):
         """

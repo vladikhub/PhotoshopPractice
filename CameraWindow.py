@@ -9,7 +9,7 @@ class Camera(QMainWindow):
     def __init__(self, parent=None):
         super().__init__()
         # Подгрузка ui-файла
-        uic.loadUi('camera.ui', self)
+        uic.loadUi('D:/PycharmProjects/SumPracticaFinal/ui/camera.ui', self)
         self.setWindowTitle("Веб-камера")
 
         self.parent = parent
